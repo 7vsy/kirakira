@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sample</title>
+
+  <script src="./lib.effects.kirakira.js" ></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      lib.effects.kirakira({ 
+        selector : document.querySelector('#kira'), 
+        maxHeight : 160 / 2, 
+        maxWidth : 320 / 2, 
+        opacity : 0.8, 
+        imgName : './star1.png', 
+        imgHeight : 25, 
+        imgWidth : 25, 
+        num : 7, 
+        zIndex : 10, 
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div style="position:relative; width:320px; height:200px; background-color: #000;">
+    <div id="kira"></div>
+  </div>
+</body>
+</html>
+
